@@ -1,0 +1,73 @@
+d:\practice>md GitDemo2
+d:\practice>cd GitDemo2
+
+d:\practice\GitDemo2>dotnet new console
+.... console application will be created.
+
+d:\practice\GitDemo2>code .
+
+///////////////////// vscode cmd /////
+
+d:\practice\GitDemo2>git init
+repository initialized
+d:\practice\GitDemo2>git add Program.cs
+d:\practice\GitDemo2>git add GitDemo2.csproj
+d:\practice\GitDemo2>git status
+// files are added to staging
+d:\practice\GitDemo2>git commit -m "Initial Commit"
+// files added to repository
+d:\practice\GitDemo2>git branch
+*(master)
+d:\practice\GitDemo2>git branch -m master main
+d:\practice\GitDemo2>git branch
+*(main)
+////////////////////////// login to your github /////
+1. Create new repository: GitDemo2
+   i) after creating the repository, it will display following commands
+   ....
+   git remote add origin https://github.com/benefice-bytes/GitDemo2.git
+   git branch -M main
+   git push -u origin main
+
+   ii) copy above commands, and paste in your vscode cmd prompt
+////////////////// Observation ///////
+your local git repository files added to your remote repository.
+
+/////////////////  vscode cmd ////////////
+// create a new branch
+d:\practice\GitDemo2> git checkout -b branch1
+d:\practice\GitDemo2> git branch
+*(branch1)
+main
+d:\practice\GitDemo2>
+/// modify your program.cs file 
+d:\practice\GitDemo2>dotnet build
+d:\practice\GitDemo2>dotnet run
+// successfully running your changes
+d:\practice\GitDemo2>git add program.cs
+d:\practice\GitDemo2>git commit -m "new changes"
+
+// add your new changes(branch1) to your remote repository
+d:\practice\GitDemo2>git push --set-upstream origin branch1
+//// observation
+// goto your github account
+now you have two branches (main, branch1 )
+
+///////////// vscode cmd ////
+d:\practice\GitDemo2>git checkout main
+
+// now merge your branch1 with main
+d:\practice\GitDemo2>git merge branch1
+
+// now push your main branch to the remote repository
+d:\practice\GitDemo2>git push
+
+// create another branch and delete the branch
+d:\practice\GitDemo2>git checkout -b branch2
+d:\practice\GitDemo2>git branch
+d:\practice\GitDemo2>git checkout main
+
+// delete branch2
+d:\practice\GitDemo2>git branch -d branch2
+
+
