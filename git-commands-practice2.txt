@@ -71,3 +71,37 @@ d:\practice\GitDemo2>git checkout main
 d:\practice\GitDemo2>git branch -d branch2
 
 
+// git bash commands for  check out  siwtch branches , add remote upstrema url 
+
+git clone https://github.com/sridharkurra/GitDemo-1.git
+ls view files in in a floder
+
+to view remote urls use foling command
+git remote -v 
+origin  https://github.com/sridharkurra/GitDemo-1.git (fetch)
+origin  https://github.com/sridharkurra/GitDemo-1.git (push)
+
+to add upstream use foling command
+git remote add upstream https://github.com/benefice-bytes/GitDemo.git
+
+git remote -v 
+origin  https://github.com/sridharkurra/GitDemo-1.git (fetch)
+origin  https://github.com/sridharkurra/GitDemo-1.git (push)
+upstream        https://github.com/benefice-bytes/GitDemo.git (fetch)
+upstream        https://github.com/benefice-bytes/GitDemo.git (push)
+
+git branch  to  check which branch your pointing
+
+to check out latest branch use folling command
+git checkout origin/<branchname>main
+
+git switch <branchname>main
+
+to check which branch your pointing use folling
+git branch
+
+
+
+
+
+
